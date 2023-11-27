@@ -1,0 +1,120 @@
+// Переменные
+$primary-color: #ff5500;
+$secondary-color: #333333;
+
+// Общие стили для всего документа
+$font-family: Arial, sans-serif;
+$font-size: 16px;
+$line-height: 1.5;
+$padding: 20px;
+
+// Стили для заголовков
+$heading-color: $primary-color;
+$heading-font-size: 24px;
+$heading-text-transform: uppercase;
+
+// Стили для навигационного меню
+$nav-bg-color: $secondary-color;
+$nav-link-color: #ffffff;
+$nav-link-hover-color: #ff8800;
+
+// Основной контейнер
+$container-max-width: 1200px;
+$container-bg-color: #f5f5f5;
+
+// Секции
+$section-padding: 40px;
+
+// Список
+$list-padding-left: 20px;
+$list-item-padding-bottom: 10px;
+
+// Футер
+$footer-bg-color: #eeeeee;
+$footer-text-color: #999999;
+$footer-padding: 10px;
+
+// Применение стилей
+
+// Установка переменных
+$primary-font-color: $secondary-color;
+$secondary-font-color: $primary-color;
+
+// Стили для body
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  padding: $padding;
+}
+
+// Стили для заголовков
+h1, h2 {
+  color: $heading-color;
+  font-size: $heading-font-size;
+  text-transform: $heading-text-transform;
+}
+
+// Стили для навигационного меню
+header {
+  background-color: $nav-bg-color;
+
+  h1 {
+    color: $nav-link-color;
+  }
+
+  nav {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        a {
+          color: $nav-link-color;
+          text-decoration: none;
+
+          &:hover {
+            color: $nav-link-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Стили для основного контейнера
+main {
+  max-width: $container-max-width;
+  background-color: $container-bg-color;
+  margin: 0 auto;
+  padding: $section-padding;
+
+  section {
+    padding-bottom: $section-padding;
+
+    h2 {
+      color: $primary-color;
+      font-size: $heading-font-size;
+      text-transform: $heading-text-transform;
+    }
+
+    p {
+      color: $secondary-color;
+    }
+
+    ul {
+      padding-left: $list-padding-left;
+
+      li {
+        padding-bottom: $list-item-padding-bottom;
+      }
+    }
+  }
+}
+
+// Стили для футера
+footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  padding: $footer-padding;
+}
